@@ -1,0 +1,28 @@
+{
+  "name": "rbc",
+  "version": "1.0.0",
+  "description": "rbc backend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "config": {
+    "accessToken": "e8cf32baa622ce72b243f640e5df725a01aa37049b8af61bbde4d92cb0cd4d8d",
+    "space": "tot9g2yx605b"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/b-church/rbc.git"
+  },
+  "author": "Ben Church",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/b-church/rbc/issues"
+  },
+  "homepage": "https://github.com/b-church/rbc#readme",
+  "dependencies": {
+    "contentful": "^3.8.0",
+    "express": "^4.14.0",
+    "request": "^2.79.0"
+  }
+}
