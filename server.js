@@ -1,15 +1,10 @@
-/**
- * Created by Ben Church on 27/01/2017.
- */
-
 // server.js
 
 // call the packages
-var express = require('express');
-var app = express();
-var bodyParser = require('body-parser');
-
-
+const express = require('express');
+const app = express();
+let port = 8080;        // set port
+const bodyParser = require('body-parser');
 
 //var config = require('./package.json').config || {}
 //var accessToken = config.accessToken,space= config.space;
@@ -18,14 +13,19 @@ var bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-var port = 8080;        // set port
+
 
 
 
 // API Routes
-require('./controllers/routes')(app);
+//other way of doing routes
+//require('./controllers/routes')(app);
+
+let router = require('./controllers/router');
+app.use('/', router);
+
 
 
 // Start Server
 app.listen(port);
-console.log('Server listening on ' + port);
+console.log('Server listening on port ' + port);

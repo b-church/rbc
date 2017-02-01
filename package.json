@@ -21,8 +21,13 @@
   },
   "homepage": "https://github.com/b-church/rbc#readme",
   "dependencies": {
-    "contentful": "^3.8.0",
+    "bluebird": "^3.4.7",
+    "body-parser": "latest",
     "express": "^4.14.0",
-    "request": "^2.79.0"
+    "express-promise": "^0.4.0",
+    "joi": "^10.2.0",
+    "request": "^2.79.0",
+    "typescript": "^2.1.5",
+    "request-promise": "latest"
   }
 }
